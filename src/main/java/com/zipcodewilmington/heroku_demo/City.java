@@ -1,17 +1,14 @@
 package com.zipcodewilmington.heroku_demo;
 
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class City {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     private String name;
     private int population;
@@ -19,17 +16,17 @@ public class City {
     public City() {
     }
 
-    public City(Long id, String name, int population) {
+    public City(Integer id, String name, int population) {
         this.id = id;
         this.name = name;
         this.population = population;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
