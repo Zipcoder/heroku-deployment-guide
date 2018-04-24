@@ -4,5 +4,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CityDAO extends PagingAndSortingRepository<Integer, City> {
+public interface CityDAO extends PagingAndSortingRepository<City, Long> {
 }
