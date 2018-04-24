@@ -9,7 +9,7 @@ import javax.validation.constraints.Positive;
 public class Item {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
     @NotNull
